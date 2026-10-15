@@ -1,3 +1,4 @@
 export function countWords(text) {
-  return text.split(' ').length;
+  const clean = text.trim();
+  return clean === '' ? 0 : clean.split(/\s+/u).length;
 }
